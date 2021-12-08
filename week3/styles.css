@@ -31,7 +31,7 @@ ol ~ p{
     text-transform: uppercase;
 }
 li {
-    list-style: circle;
+    list-style-type: disc;
   }
   
 #picture{
