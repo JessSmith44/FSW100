@@ -3,13 +3,13 @@ h1{
     font-style: georgia;
     text-align: center;
 }
-h2{
+h3{
     color: green;
     font-style: georgia;
     text-align: center;
     
 }
-h3{
+.funTitle{
     color: green;
     font-style: georgia;
     vertical-align: top;
@@ -27,10 +27,10 @@ a{
 a:hover {
     text-decoration: underline;
     }
-ol ~ p{
+.interest{
     text-transform: uppercase;
 }
-li {
+ol > li {
     list-style-type: disc;
   }
   
