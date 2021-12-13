@@ -1,0 +1,108 @@
+body {
+    background-color: lavenderblush;
+}
+
+nav {
+    background-color:lightcyan;
+    position: fixed;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    top: 0;
+    width: 100%;
+}
+
+nav > a {
+    margin-right: 20px;
+    font-size: 17px;
+    font-size: large;
+    font-family: fantasy;
+    font-style: italic;
+    color: lightseagreen;
+    text-decoration: none;
+}
+nav > a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color:deepskyblue;
+    margin-top: 50px;
+
+}
+h3{
+    float: none;
+    text-decoration: underline;
+}
+#postOne{
+    border: 2px grey;
+    border-style: outset;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 10px;
+}
+#date{
+    font-weight: lighter;
+}
+#tracks{
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+#first{
+    float: none;
+}
+#readmore{
+    text-decoration: underline;
+    font-style: italic;
+}
+#postTwo{
+    border: 2px grey;
+    border-style: outset;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 40px;
+}
+#downhill{
+    width: 150px;
+    float: left;
+    padding: 10px;
+}
+#readmoreTwo{
+    text-decoration: underline;
+    font-style: italic;
+}
+#postThree{
+    border: 2px grey;
+    border-style: outset;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 40px;
+}
+#editSunset{
+    width: 150px;
+    float: left;
+    padding: 10px;
+}
+#readmoreThree{
+    text-decoration: underline;
+    font-style: italic;
+}
+#postFour{
+    border: 2px grey;
+    border-style: outset;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 40px;
+}
+#waterfall{
+    width: 150px;
+    float: left;
+    padding: 10px;
+}
+#readmoreFour{
+    text-decoration: underline;
+    font-style: italic;
+}
