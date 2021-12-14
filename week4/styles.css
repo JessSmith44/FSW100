@@ -1,7 +1,6 @@
 body {
     background-color: lavenderblush;
 }
-
 nav {
     background-color:lightcyan;
     position: fixed;
@@ -12,7 +11,6 @@ nav {
     top: 0;
     width: 100%;
 }
-
 nav > a {
     margin-right: 20px;
     font-size: 17px;
@@ -30,79 +28,82 @@ h1{
     text-align: center;
     color:deepskyblue;
     margin-top: 50px;
-
 }
-h3{
+.post > h3{
     float: none;
     text-decoration: underline;
 }
-#postOne{
+.post-vert > h3{
+    float: none;
+    text-decoration: underline;
+}
+.post-vert{
     border: 2px grey;
     border-style: outset;
     border-radius: 25px;
-    margin: 30px;
+    margin: 20px;
     padding: 10px;
 }
-#date{
+.post{
+    border: 2px grey;
+    border-style: outset;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 30px;
+    min-height: 500;
+}
+.date{
     font-weight: lighter;
+    font-size: small;
 }
-#tracks{
-    width: 200px;
-    float: left;
-    padding: 10px;
-}
-#first{
+.textentry{
     float: none;
 }
-#readmore{
+.readmore{
     text-decoration: underline;
     font-style: italic;
 }
-#postTwo{
+#aboutpage{
+    background-color: lavenderblush;
+}
+#rants{
     border: 2px grey;
     border-style: outset;
     border-radius: 25px;
-    margin: 30px;
-    padding: 40px;
+    margin: 40px;
+    padding: 20px;
 }
-#downhill{
-    width: 150px;
-    float: left;
+.horizontal{
+    width: 130px;
     padding: 10px;
-}
-#readmoreTwo{
-    text-decoration: underline;
-    font-style: italic;
-}
-#postThree{
-    border: 2px grey;
-    border-style: outset;
-    border-radius: 25px;
-    margin: 30px;
-    padding: 40px;
-}
-#editSunset{
-    width: 150px;
     float: left;
-    padding: 10px;
 }
-#readmoreThree{
-    text-decoration: underline;
-    font-style: italic;
-}
-#postFour{
-    border: 2px grey;
-    border-style: outset;
-    border-radius: 25px;
-    margin: 30px;
-    padding: 40px;
-}
-#waterfall{
+.horizontals{
     width: 150px;
-    float: left;
     padding: 10px;
+    float: left;
 }
-#readmoreFour{
+.vertical{
+    width: 200px;
+    padding: 10px;
+    float: left;
+}
+#socold{
+    width: 400px;
+    padding: 20px;
+}
+#wildlife{
+    width: 200px;
+}
+#flowers{
+    width: 200px;
+}
+#contactinfo{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.fakeinfo{
     text-decoration: underline;
     font-style: italic;
 }
