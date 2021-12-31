@@ -1,4 +1,4 @@
-    #container {
+    #container1 {
         display: flex;
         justify-content: space-evenly;
     }
@@ -34,11 +34,22 @@
         border: 5px;
         margin: 5px;
         text-align: center;
-        transition: opacity 1s;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
     }
     .box2:hover{  
-        opacity: 0;
-      /*  display: none; */
+        background-color: cornflowerblue;
+        opacity: 0.5;
+        font-style: italic;
+        border-radius: 25px;
+        background-color: #FFCCCC;
+        width: 250px;
+        height: 60px;
+        transform: rotate(180deg);
+        bottom: 70%;
+        right: auto;
+        position: absolute;
+        transition-timing-function: ease;
+        
     }
     #box3 {
         display: block;
@@ -49,20 +60,16 @@
         border: 5px;
         margin: 5px;
         text-align: center;
-        opacity: 1;
-        transition: width 2s, height 2s, background-color 2s, transform 2s;
+        transition: opacity 1s;
     }
     #box3:hover{
-        background-color: cornflowerblue;
-        opacity: 0.5;
-        font-style: italic;
-        border-radius: 25px;
-        background-color: #FFCCCC;
-        width: 250px;
-        height: 60px;
-        transform: rotate(180deg);
-        bottom: 70%;
-        position: absolute;
+        opacity: 0;
+        border: solid lightslategray;
+        background-color: lightslategrey;
+    }
+    #container2 {
+        display: flex;
+        justify-content: space-evenly;
     }
     #box4 {
         display: block;
@@ -134,11 +141,14 @@
         height: 80px;
         transform: rotate(360deg);
     }
+    #musicplay{
+        display: flex;
+    justify-content: center;
+    align-items: center 
+    }
     #music{
         bottom: 50px;
-        padding: 30px;
-        margin: 30px;
-        margin-left: 450px;
+        padding: 30px; 
     }
        @keyframes bgcolor {
         0% {
