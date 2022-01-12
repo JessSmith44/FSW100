@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Amita&family=Annie+Use+Your+Telescope&family=Bad+Script&family=BenchNine:wght@300&family=Caveat&family=Cinzel&family=Cinzel+Decorative&family=Comforter&family=Coming+Soon&family=Corinthia&family=Dancing+Script&family=Fleur+De+Leah&family=Fredericka+the+Great&family=Fuzzy+Bubbles&family=Grey+Qo&family=Handlee&family=Herr+Von+Muellerhoff&family=Indie+Flower&family=Just+Another+Hand&family=Kalam:wght@300&family=Kings&family=Kristi&family=Lateef&family=Lobster+Two&family=Luxurious+Script&family=Meow+Script&family=Merienda&family=Monsieur+La+Doulaise&family=Montserrat+Alternates:wght@100&family=Nanum+Pen+Script&family=Nothing+You+Could+Do&family=Patrick+Hand&family=Playfair+Display&family=Press+Start+2P&family=Redacted+Script:wght@300&family=Reenie+Beanie&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Shalimar&family=Shippori+Mincho&family=Stardos+Stencil&family=Yuji+Boku&display=swap');
-@media(max-width: 1978px){
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Amita&family=Annie+Use+Your+Telescope&family=Bad+Script&family=BenchNine:wght@300&family=Caveat&family=Cinzel&family=Cinzel+Decorative&family=Comforter&family=Coming+Soon&family=Corinthia&family=Dancing+Script&family=Fleur+De+Leah&family=Fredericka+the+Great&family=Fuzzy+Bubbles&family=Grey+Qo&family=Handlee&family=Herr+Von+Muellerhoff&family=Indie+Flower&family=Just+Another+Hand&family=Kalam:wght@300&family=Kings&family=Kristi&family=Lateef&family=Lobster+Two&family=Luxurious+Script&family=McLaren&family=Meow+Script&family=Merienda&family=Monsieur+La+Doulaise&family=Montserrat+Alternates:wght@100&family=Nanum+Pen+Script&family=Nothing+You+Could+Do&family=Patrick+Hand&family=Playfair+Display&family=Press+Start+2P&family=Redacted+Script:wght@300&family=Reenie+Beanie&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Shalimar&family=Shippori+Mincho&family=Stardos+Stencil&family=Yuji+Boku&display=swap');
+
+@media(max-width: 123.625em){
 :root{
-    --primary-color: lightsteelblue;
+    --primary-color: bisque;
 }
 *{
     box-sizing: border-box;
@@ -12,6 +13,8 @@ body{
     font-family: "lato", "sans-serif";
     color: #333;
     line-height: 1.6;
+    font-size: 1em;
+    background-color: var(--primary-color);
 }
 ul{
     list-style-type: none;
@@ -20,10 +23,24 @@ a{
     text-decoration: none;
     color: #333;
 }
-h1, h2{
+h1{
     font-weight: 300;
+    font-size: 2em;
     line-height: 1.2;
     margin: 10px 0;
+    text-decoration: underline lightslategrey;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Comforter', cursive;
+    font-family: 'Coming Soon', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Kings', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'Stardos Stencil', cursive;
+}
+.logo{
+    animation: slideInFromTop 1s ease-in;
 }
 .welcome{
     margin: 10px 0;
@@ -39,7 +56,6 @@ img{
     width: 200px;
     grid-column: 1/2;
     grid-row: 1/2;
-    animation: slideInFromLeft 1s ease-in;
 }
 .navbar{
     background-color: var(--primary-color);
@@ -54,7 +70,7 @@ img{
     margin: 0 5px;
 }
 .navbar a:hover{
-    border-bottom: 2px mistyrose solid;
+    border-bottom: 2px rgb(0, 0, 0) solid;
 }
 .navbar .flex{
     justify-content: space-between;
@@ -65,20 +81,7 @@ img{
     color: black;
     position: relative;
 }
-.showcase::before,
-.showcase::after{
-    content: "";
-    position: absolute;
-    height: 100px;
-    bottom: -70px;
-    background-color: var(--primary-color);
-    right: 0;
-    left: 0;
-    transform: skewY(-2deg);
-    -webkit-transform: skewY(-2deg);
-    -moz-transform: skewY(-1deg);
-    -ms-transform: skewY(-1deg);
-}
+
 .showcase h1{
     font-size: 30px;
     grid-row: 1/3;
@@ -127,7 +130,6 @@ article{
     z-index: 100;
     justify-self: flex-end;
     grid-column: 3/4;
-    animation: slideInFromRight 1s ease-in;
 }
 .form-control{
     padding: 5px;
@@ -152,13 +154,14 @@ input:focus{
     display: inline-block;
     padding: 10px 30px;
     cursor: pointer;
-    background: var(--primary-color);
-    color:whitesmoke;
+    background: whitesmoke;
+    color: cornflowerblue;
     border: none;
     border-radius: 5px;
 }
 .btn:hover{
     transform: scale(.98);
+    color: black;
 }
 .text-center{
     text-align: center;
@@ -195,32 +198,30 @@ input:focus{
     margin-bottom: 100px;
     margin-left: 100px;
     margin-right: 100px;
+    opacity: 0.8;
 }
 td{
-    border: 2px lightslategray solid;
+    border: 2px black solid;
     text-align: center;
     margin-right: 100px;
     font-size: 18px;
     background-color: #fff;
 }
-.tableHead{
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-.picture2{
-    width: 250px;
-    float: right;
+th{
+    border: 2px black solid;
+    text-align: center;
     margin-right: 100px;
-    margin-left: 100px;
+    font-size: 18px;
+    background-color: #fff;
 }
+
 footer{
     text-align: center;
     padding: 15px;
     margin: 15px;
 }
 }
-@keyframes slideInFromLeft{
+@keyframes slideInFromTop{
     0%{
         transform: translateX(-100%);
     }
@@ -228,15 +229,7 @@ footer{
         transform: translateX(0);
     }
 }
-@keyframes slideInFromRight{
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@media(max-width: 1024px){
+@media(max-width: 64em){
     .grid,
     .grid-3,
     .myContent{
@@ -248,7 +241,7 @@ footer{
     .showcase{
         height: auto;
     }
-    .picture1{
+    .picture{
         justify-self: center;
     }
     .container{
@@ -260,7 +253,7 @@ footer{
     }
     .form-card{
         width: 250px;
-        height: 240px;
+        height: 270px;
         left: 0;
         right: 0;
         top: -15px;
@@ -271,7 +264,7 @@ footer{
     }
 }
 /* Mobile */
-@media (max-width: 830px) {
+@media (max-width: 51.875em) {
     .navbar{
         height: 110px;
     }
